@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Brands Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            margin-top: 20px; /* Sayfanın üst kısmındaki boşluğu azaltır */
+        }
+
+        .brand-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .brand-buttons button {
+            background-color: #800000;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .brand-buttons button:hover {
+            background-color: #600000;
+        }
+
+        .brand-images {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .brand-images img {
+            max-width: 100%; /* Resimlerin maksimum genişliği %100 olacak şekilde ayarlandı */
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #333;
+        }
+
+        .car-info {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .car-info h2 {
+            color: #b00303;
+            border-bottom: 2px solid #800000;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .car-info p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .car-info a {
+            color: #0066cc;
+            text-decoration: none;
+            border-bottom: 1px dotted #157fe9;
+        }
+
+        .car-info a:hover {
+            color: #004080;
+            border-bottom: 1px dotted #004080;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>The Car Brands</h1>
+    </div>
+
+    <div class="content">
+        <div class="brand-buttons">
+            <button onclick="window.location.href='audi.html'">Audi</button>
+            <button onclick="window.location.href='porsche.html'">Porsche</button>
+            <button onclick="window.location.href='ferrari.html'">Ferrari</button>
+        </div>
+
+        <div class="brand-images">
+            <img src="/images/audi_image.jpg" alt="Audi Image">
+            <img src="/images/porsche_image.jpg" alt="Porsche Image">
+            <img src="/images/ferrari_image.jpg" alt="Ferrari Image">
+        </div>
+
+        <div class="car-info">
+            <h2>What is a Car?</h2>
+            <p>
+                A car, also known as an automobile, is a wheeled motor vehicle used for transportation. Most definitions of cars say
+                that they run primarily on roads, seat one to eight people, have four tires, and mainly transport people rather than goods.
+            </p>
+
+            <h2>History of Cars:</h2>
+            <p>
+                The history of cars dates back to the late 19th century. Karl Benz is often credited with creating the first true
+                automobile with an internal combustion engine in 1885-1886. Since then, cars have evolved significantly, becoming an
+                integral part of modern life.
+            </p>
+
+            <h2>Learn More:</h2>
+            <p>
+                Explore further about cars on <a href="https://en.wikipedia.org/wiki/Car" target="_blank">Wikipedia</a>.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
